@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سر مصنع الكاكاو</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #ffffff;
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            background-color: #111;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5);
+        }
+
+        .navbar a {
+            display: inline-block;
+            color: #ffffff;
+            background: #ff0000;
+            text-decoration: none;
+            margin: 5px 15px;
+            padding: 8px 20px;
+            border-radius: 20px;
+            box-shadow: 0 3px 10px rgba(255, 0, 0, 0.7);
+            font-size: 1rem;
+            font-weight: bold;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #8b0000;
+            transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.9);
+        }
+
+        .container {
+            display: flex;
+            height: 90vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            letter-spacing: 3px;
+            color: #ff0000;
+            text-shadow: 4px 4px 10px rgba(255, 0, 0, 0.8);
+        }
+
+        p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            line-height: 1.8;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+
+        .show {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+
+        .btn {
+            background-color: #ff0000;
+            color: #ffffff;
+            border: none;
+            padding: 10px 25px;
+            margin-top: 30px;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 3px 12px rgba(255, 0, 0, 0.8);
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #8b0000;
+            transform: scale(1.05);
+        }
+
+        .content-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .content-section h2 {
+            color: #ff0000;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #111;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        
+@media (max-width: 600px) {
+    .navbar a {
+        display: inline-block;  
+        width: auto;           
+        padding: 8px 15px;      
+        margin: 5px 5px;        
+        font-size: 0.9rem;    
+    }
+
+    .btn {
+        width: 60%;          
+        font-size: 1rem;
+    }
+}
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .btn {
+                width: 80%;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">الرئيسية</a>
+        <a href="#story">القصة</a>
+        <a href="#characters">الشخصيات</a>
+        <a href="#contact">تواصل معنا</a>
+    </div>
+
+    <div class="container">
+        <h1>سر مصنع الكاكاو</h1>
+        <p class="fade-in">
+            اكتشف السر المخفي في مصنع الكاكاو المهجور...  
+            ألغاز مرعبة، دمى قاتلة، وقصة مليئة بالغموض.  
+            هل تستطيع النجاة؟
+        </p>
+        <button class="btn" onclick="window.open('https://example.com/download', '_blank');">
+    ابدأ المغامرة
+</button>
+    </div>
+
+    <div class="content-section" id="story">
+        <h2>القصة</h2>
+        <p class="fade-in">
+            في بلدة صغيرة، كان مصنع الكاكاو هو القلب النابض للمدينة.  
+            لكن ذات يوم اندلعت النيران في المصنع، وتحولت الأرواح إلى دمى مرعبة...  
+            عائلة "كيفن" هي المفتاح لاكتشاف هذا السر الغامض.  
+        </p>
+    </div>
+
+    <div class="content-section" id="characters">
+        <h2>الشخصيات</h2>
+        <p class="fade-in">
+             **كيفن (الأب):** موظف بالمصنع، أصبح دمية قاتلة بعد الحادث.  
+             **لايلي (الأم):** تحاول حماية أطفالها بأي ثمن.  
+             **سكار (الابن الأكبر):** شجاع لكنه متهور.  
+             **جاك (الأخ الصغير):** بطل اللعبة الذي عليه كشف الأسرار.  
+        </p>
+    </div>
+
+    <div class="content-section" id="contact">
+        <h2>تواصل معنا</h2>
+        <p class="fade-in">
+            لديك استفسار حول اللعبة؟ أو ترغب بمشاركة رأيك؟  
+            راسلنا عبر البريد الإلكتروني:  
+            <br> 📧 <b>contact@cocoosecret.com</b>
+        </p>
+    </div>
+
+    <footer>
+        &copy; 2025 جميع الحقوق محفوظة - لعبة سر مصنع الكاكاو
+    </footer>
+
+    <script>
+        const fadeElements = document.querySelectorAll('.fade-in');
+
+        const showElements = () => {
+            fadeElements.forEach(element => {
+                const position = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+
+                if (position < windowHeight * 0.85) {
+                    element.classList.add('show');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', showElements);
+        window.addEventListener('load', showElements);
+    </script>
+</body>
+</html>
